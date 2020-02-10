@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> HOME 4.0 | Home </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+
+    <!--fontawsome styles -->
+    <script src="https://kit.fontawesome.com/76c40a5f57.js" crossorigin="anonymous"></script>
+    <link href="fontawesome-free-5.12.0-web/fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
+
+
+    <link rel="icon" href="favicon.jpeg" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet" />
+	
+	<meta property="og:title" content="Code with Pandey" />		
+	<meta property="og:url" content="https://project.codewithpandey.com//" />
+	<meta property="og:image" content="https://project.codewithpandey.com/favicon.jpeg" />
+	<meta property="og:description" content="A college project which is being created like a project of a reputed company." />
+	
+	<meta property="og:site_name" content="Home 4.0" />
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:image:width" content="400" /> 
+	<meta property="og:image:height" content="300" />
+
+    <style>
+        /*           Main CSS [Common CSS]       */
+
+        body,
+        button,
+        div,
+        dl,
+        footer,
+        head,
+        html,
+        img,
+        input,
+        li,
+        ol,
+        table,
+        td,
+        tr,
+        ul {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            outline: 0
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+
+            background: #fff;
+            background-image: url();
+            background-repeat: no-repeat;
+            background-position: bottom 0px;
+
+            margin: 0;
+            padding: 0;
+        }
+
+
+        a {
+            outline: none;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .inliner {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .spaceEater {
+            width: 100%;
+            height: 50px;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        /*==========setting the custom scroll bar==========*/
+        ::-webkit-scrollbar {
+            width: 5px;
+            background: #eee;
+        }
+
+        ::-webkit-scrollbar-track {
+
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #0099ff;
+            width: 5px;
+            height: 20px;
+        }
+
+        /*           Main CSS [Common CSS]       */
+
+        body,
+        button,
+        div,
+        dl,
+        footer,
+        head,
+        html,
+        img,
+        input,
+        li,
+        ol,
+        table,
+        td,
+        tr,
+        ul {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            outline: 0
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+
+            background: #fff;
+            background-image: url();
+            background-repeat: no-repeat;
+            background-position: bottom 0px;
+
+            margin: 0;
+            padding: 0;
+        }
+
+
+        a {
+            outline: none;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /*-----     Nav Bar    --------*/
+        /*-----     Nav Bar    --------*/
+        /*-----     Nav Bar    --------*/
+        /*-----     Nav Bar    --------*/
+        /*-----     Nav Bar    --------*/
+        .navbar {
+            top: 0;
+            width: 100%;
+            position: fixed;
+            background: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            box-shadow: 5px 5px 5px rgba(225, 225, 225, 0.65),
+                0px 0px 5px rgba(60, 60, 60, 0.12),
+                4px 2px 15px rgba(70, 70, 70, 0.20);
+            z-index: 100;
+        }
+
+        .logo {
+            letter-spacing: 1.5px;
+            margin: 12px 25px;
+
+            color: #000;
+        }
+
+        .navBtn {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            letter-spacing: 1px;
+            display: inline-block;
+        }
+
+        /*-------- when not active nav button <a> --------*/
+        .navBtn a {
+            margin: 0px 20px;
+            padding: 2px 0;
+            color: #121212;
+            border-bottom: 3px solid #fff;
+            transition: 500ms;
+        }
+
+        /*.navBtn a:nth-child(odd) {
+    color: #0099FF;
+}*/
+
+        /****** active nav button <a> ******/
+        .navBtn a.active {
+            border-bottom: 3px solid #0099FF;
+            color: #121212;
+        }
+
+        .navBtn a.active span {
+            color: #0099FF;
+            font-weight: bold;
+        }
+
+
+        .navBtn a:hover {
+            border-bottom: 3px solid #0099FF;
+        }
+
+        .logBtn {
+            margin: 12px 0px;
+            float: right;
+        }
+
+        .links {
+            padding: 3px 13px 4px;
+            border-radius: 20px;
+            color: #0099ff;
+            transition: 0.5s;
+            border: 0.5px solid rgba(255, 255, 255, 0.0);
+        }
+
+        .links:hover {
+            border: 0.5px solid #0099ff;
+            box-shadow: 0px 0px 5px rgba(225, 225, 225, 0.65),
+                0px 0px 15px rgba(60, 60, 60, 0.1);
+        }
+
+        .text {
+            width: 70%;
+            margin: 200px auto;
+            text-align: center;
+            font-size: 30px;
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        /*---------------media query [nav Bar]--------------*/
+        @media screen and (min-width:900px) and (max-width:1350px) {
+
+            .navBtn {
+                width: 70%;
+                margin: 0 auto;
+            }
+
+
+
+        }
+
+        @media screen and (min-width:801px) and (max-width:899px) {
+
+            /* mobile Landscape */
+            .plan-container {
+                margin: auto 50px;
+            }
+
+            .navBtn {
+                width: 65%;
+            }
+
+            .navBtn a {
+                margin: 0 8px;
+            }
+
+            .text {
+                width: 70%;
+                padding: 0;
+                margin: 100px auto;
+
+                font-size: 22px;
+
+            }
+
+        }
+
+        /*-----------------       mobile portrait */
+        @media screen and (max-width:800px) {
+
+            .onlypc {
+                display: none !important;
+            }
+
+            .onlyphone {
+                display: inline-block !important;
+            }
+
+            .text {
+                width: 90%;
+
+                margin: 50% auto;
+                font-size: 15px;
+            }
+
+            .text h1 {
+                margin: 0 auto;
+                font-size: 50px;
+            }
+
+            .navBtn {
+                display: none;
+                position: absolute;
+                width: 100%;
+                height: 100vh;
+                background: #FFFFFF;
+                margin-top: 0px;
+                z-index: -1;
+            }
+
+            .navBtn a {
+                display: block;
+                padding: 60px;
+                margin: 0px;
+                font-size: 1.5em;
+                border-bottom: 0.5px solid #ccc;
+                color: #000 !important;
+            }
+
+            #noborder {
+                border-bottom: 0px solid #ccc !important;
+            }
+
+            .navBtn a:hover {
+                border-bottom: 0.5px solid #0099FF;
+                background: #00AFFF;
+            }
+
+            .navBtn a.active {
+                background: #0099FF;
+                color: #FFFFFF !important;
+            }
+
+            .navBtn a.active span {
+                color: #000000 !important;
+            }
+
+            .menuToggle {
+                width: 45px;
+                height: 44px;
+                border-radius: 5px;
+                font-size: 25px;
+                padding-top: 2px;
+                background: #FFFFFF;
+                color: #cccccc;
+                position: absolute;
+                border-radius: 30px;
+                margin: 0px 0px 0px 40px;
+                transition: 300ms;
+                box-shadow: 0px 3px 5px rgba(225, 225, 225, 0.65), 0px 3px 5px rgba(60, 60, 60, 0.12), 0px 3px 10px rgba(70, 70, 70, 0.05);
+
+            }
+
+            /*--------settings page----------*/
+            .Activity-Profile-img {
+                margin: 3px !important;
+            }
+        }
+
+        /*----------------------------------     Nav Bar    --------*/
+
+    </style>
+
+</head>
+
+<body>
+    <div class="navbar">
+
+        <a href="/">
+            <div class="logo inliner"> HO<i class="fa fa-home" style="color:#0099ff; margin:0; padding:0;"></i>E 4.0</div>
+        </a>
+		
+    </div>
+    <div class="text">
+        <h1>HO<i class="fa fa-home" style="color: #0099ff;margin:0;"></i>E 4.0</h1>
+        <h2>" The Next Gen <br>
+            Futuristic Home is Here with <span style="color: #0099ff">YOU</span> "</h2>
+        <a class="links" href="about.php" style="padding:10px 20px;float:right;font-size:20px;border-radius:30px; border:1.5px solid #0099ff">Read More </a>
+    </div>
+</body>
+
+</html>
