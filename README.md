@@ -1,1 +1,2 @@
-# home4.0
+# HOME4.0
+Get ready to control your home using your phone. Welcome to the world of IoT.
