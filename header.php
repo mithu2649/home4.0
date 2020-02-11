@@ -5,7 +5,7 @@ $page = ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF'])));
 <html>
 
 <head>
-    <title> HOME 4.0 | <?php if($page == "Index"){echo "Home";}else{echo $page;} ?> </title>
+    <title> HOME 4.0 | <?php if($page == "Index"){echo "Home";}else{echo ucwords(str_replace("-", " ", $page));} ?> </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
@@ -51,7 +51,7 @@ $page = ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF'])));
 
             <a <?php if($page == "Chat"){echo 'class="active"';}else{echo ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF'])));} ?> href="chat"><span>C</span>hat</a>
 
-            <a <?php if($page == "Settings"){echo 'class="active"';}else{echo ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF'])));} ?> href="settings"><span>S</span>ettings</a>
+            <a <?php if($page == "Settings"){echo 'class="active"';}else{echo ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF'])));} ?> href="user-settings"><span>S</span>ettings</a>
 
             <a <?php if($page == "Developers"){echo 'class="active"';}else{echo ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF'])));} ?> id="noborder" href="developers"><span>D</span>evelopers <span><i class="fas fa-code" style="font-size:15px;color:#0099ff"></i></span></a>
             <!-- <a class="links" href="plans.php">About</a>-->
