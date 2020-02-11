@@ -1,24 +1,10 @@
 /*           Main CSS [Common CSS]       */
 
-body,
-button,
-div,
-dl,
-footer,
-head,
-html,
-img,
-input,
-li,
-ol,
-table,
-td,
-tr,
-ul {
+* {
     padding: 0;
     margin: 0;
     border: 0;
-    outline: 0
+    outline: none;
 }
 
 html {
