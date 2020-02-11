@@ -171,11 +171,8 @@ require_once "header.php";
         width: 70%;
         position: absolute;
         background: #fff;
-        border-bottom: .5px solid #0099ff;
+        border-bottom: 0.5px solid #0099ff;
     }
-
-
-
 
     .user-img {
 
@@ -183,7 +180,7 @@ require_once "header.php";
         height: 50px;
         margin: 10px;
         background: #cccccc40;
-        background-image: url(./img/user-img/debjeet.jpg);
+        background-image: url(../img/user-img/debjeet.jpg);
         background-size: cover;
         border: 2px solid #0099ff;
         border-radius: 30px;
@@ -192,12 +189,6 @@ require_once "header.php";
     .user-text {
         text-align: center;
     }
-
-
-
-
-
-
 
 
     .sender-chat-div {
@@ -275,7 +266,7 @@ require_once "header.php";
     .chat-input-bar {
         height: auto;
         max-height: 80px;
-        width: 88%;
+        width: 87%;
         margin: 10px;
         padding: 10px 20px;
         background-color: #FFFFFF;
