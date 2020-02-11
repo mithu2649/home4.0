@@ -1,0 +1,269 @@
+/*           Main CSS [Common CSS]       */
+
+body,
+button,
+div,
+dl,
+footer,
+head,
+html,
+img,
+input,
+li,
+ol,
+table,
+td,
+tr,
+ul {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0
+}
+
+html {
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+
+    background: #fff;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: bottom 0px;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+/*-----     Nav Bar    --------*/
+/*-----     Nav Bar    --------*/
+/*-----     Nav Bar    --------*/
+/*-----     Nav Bar    --------*/
+/*-----     Nav Bar    --------*/
+.navbar {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 5px 5px 5px rgba(225, 225, 225, 0.65),
+        0px 0px 5px rgba(60, 60, 60, 0.12),
+        4px 2px 15px rgba(70, 70, 70, 0.20);
+    z-index: 100;
+}
+
+.logo {
+    letter-spacing: 1.5px;
+    margin: 12px 25px;
+
+    color: #000;
+}
+
+.navBtn {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+/*-------- when not active nav button <a> --------*/
+.navBtn a {
+    margin: 0px 20px;
+    padding: 2px 0;
+    color: #121212;
+    border-bottom: 3px solid #fff;
+    transition: 500ms;
+}
+
+/*.navBtn a:nth-child(odd) {
+    color: #0099FF;
+}*/
+
+/****** active nav button <a> ******/
+.navBtn a.active {
+    border-bottom: 3px solid #0099FF;
+    color: #121212;
+}
+
+.navBtn a.active span {
+    color: #0099FF;
+    font-weight: bold;
+}
+
+
+.navBtn a:hover {
+    border-bottom: 3px solid #0099FF;
+}
+
+.logBtn {
+    margin: 12px 0px;
+    float: right;
+}
+
+.links {
+    padding: 3px 13px 4px;
+    border-radius: 20px;
+    color: #0099ff;
+    transition: 0.5s;
+    border: 0.5px solid rgba(255, 255, 255, 0.0);
+}
+
+.links:hover {
+    border: 0.5px solid #0099ff;
+    box-shadow: 0px 0px 5px rgba(225, 225, 225, 0.65),
+        0px 0px 15px rgba(60, 60, 60, 0.1);
+}
+
+.text {
+    width: 70%;
+    margin: 200px auto;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.toggleAdjust {
+    width: 30%;
+    position: absolute;
+    border-collapse: collapse;
+    /*border: 1px solid red;*/
+    margin-top: 20px;
+}
+.toggleAdjust tr td{
+    width: 23%;
+}
+
+    .menuToggle {
+        width: 45px;
+        height: 45px;
+        border-radius: 5px;
+        font-size: 25px;
+        padding-top: 2px;
+        background: #FFFFFF;
+        color: #CCCCCC;
+        border-radius: 30px;
+        transition: 300ms;
+        box-shadow: 0px 3px 5px rgba(225, 225, 225, 0.65), 0px 3px 5px rgba(60, 60, 60, 0.12), 0px 3px 10px rgba(70, 70, 70, 0.05);
+        text-align: center;
+        vertical-align: middle;
+    }
+
+/*---------------media query [nav Bar]--------------*/
+@media screen and (min-width:900px) and (max-width:1350px) {
+
+    .navBtn {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+
+
+}
+
+@media screen and (min-width:801px) and (max-width:899px) {
+
+    /* mobile Landscape */
+    .plan-container {
+        margin: auto 50px;
+    }
+
+    .navBtn {
+        width: 65%;
+    }
+
+    .navBtn a {
+        margin: 0 8px;
+    }
+
+    .text {
+        width: 70%;
+        padding: 0;
+        margin: 100px auto;
+
+        font-size: 22px;
+
+    }
+
+}
+
+/*-----------------       mobile portrait */
+@media screen and (max-width:800px) {
+
+    .onlypc {
+        display: none !important;
+    }
+
+    .onlyphone {
+        display: inline-block !important;
+    }
+
+    .text {
+        width: 90%;
+
+        margin: 50% auto;
+        font-size: 15px;
+    }
+
+    .text h1 {
+        margin: 0 auto;
+        font-size: 50px;
+    }
+
+    .navBtn {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #FFFFFF;
+        margin-top: 0px;
+        z-index: -1;
+    }
+
+    .navBtn a {
+        display: block;
+        padding: 60px;
+        margin: 0px;
+        font-size: 1.5em;
+        border-bottom: 0.5px solid #ccc;
+        color: #000 !important;
+    }
+
+    #noborder {
+        border-bottom: 0px solid #ccc !important;
+    }
+
+    .navBtn a:hover {
+        border-bottom: 0.5px solid #0099FF;
+        background: #00AFFF;
+    }
+
+    .navBtn a.active {
+        background: #0099FF;
+        color: #FFFFFF !important;
+    }
+
+    .navBtn a.active span {
+        color: #000000 !important;
+    }
+
+    /*--------settings page----------*/
+    .Activity-Profile-img {
+        margin: 3px !important;
+    }
+}
+
+/*----------------------------------     Nav Bar    --------*/

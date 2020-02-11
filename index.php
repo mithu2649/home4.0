@@ -1,7 +1,7 @@
 <?php
 require_once "header.php";
 ?>
-
+<style>.spaceEater{display: none;}</style>
 <div class="text">
     <h1>HO<i class="fa fa-home" style="color: #0099ff;margin:0;"></i>E 4.0</h1>
     <h2>" The Next Gen <br>

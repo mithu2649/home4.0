@@ -1,0 +1,850 @@
+/*****      Style [ All typle of css is here ] All pages        *****/
+
+/*--- Index / home page ---  */
+
+
+.onlypc {
+    display: inline-block !important;
+}
+
+.onlyphone {
+    display: none !important;
+}
+
+.inliner {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.spaceEater {
+    width: 100%;
+    height: 50px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/*==========setting the custom scroll bar==========*/
+::-webkit-scrollbar {
+    width: 5px;
+    background: #eee;
+}
+
+::-webkit-scrollbar-track {
+
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0099ff;
+    width: 5px;
+    height: 20px;
+}
+
+
+/*--------------------------------------- Plans + users page ---  */
+
+/* Media Q */
+
+@media only screen and (min-width:1000px) {
+    .plan-container {
+        width: 70%;
+    }
+
+}
+
+/*------------------------------ Plans CSS */
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.plan-container {
+    position: relative;
+    margin: auto auto 50px;
+}
+
+
+.plan-div {
+    position: relative;
+    margin: 10px 10px 30px;
+}
+
+
+.planTextedit {
+
+    background: #fff;
+    border: 3px solid #fff;
+    width: 70%;
+    height: 70px;
+    border-radius: 80px;
+
+    box-shadow: 0px 0px 10px rgba(225, 225, 225, 0.65),
+        7px 7px 20px rgba(70, 70, 70, 0.12);
+
+    transition: 0.5s;
+}
+
+.planTextedit:hover {
+    box-shadow: 0px 0px 15px #fff,
+        0px 0px 20px rgba(50, 50, 50, 0.12);
+
+}
+
+.plans-text {
+    display: inline-block;
+
+    word-spacing: -1px;
+    font-size: 20px;
+    padding: 20px 5px;
+}
+
+.plans-text-switches {
+    display: inline-block;
+
+    word-spacing: -1px;
+    font-size: 20px;
+    padding: 20px 35px 20px;
+}
+
+sup {
+    font-size: 11px;
+    font-weight: bolder;
+    color: #ccc;
+
+    transition: 0.5s;
+}
+
+.bridge-div {
+    z-index: -1;
+
+    position: absolute;
+    right: 50px;
+    top: 28px;
+    width: 40%;
+
+
+    transition: 0.5s;
+}
+
+.power-button {
+    border: 3px solid #fff;
+
+    position: absolute;
+    right: 5px;
+    top: -3px;
+
+    background: #fff;
+    border-radius: 50px;
+
+    box-shadow: 5px 5px 5px rgba(225, 225, 225, 0.65),
+        0px 0px 5px rgba(60, 60, 60, 0.12),
+        4px 2px 15px rgba(70, 70, 70, 0.20);
+    transition: 0.5s;
+
+    padding: 12px;
+    width: 50px;
+    height: 50px;
+
+    text-align: center;
+}
+
+.power-button:hover {
+    box-shadow: 0px 0px 15px #fff,
+        0px 0px 20px rgba(50, 50, 50, 0.12);
+
+}
+
+button {
+    outline: 0;
+    font-family: 'Quicksand', sans-serif;
+
+    background: #fff;
+}
+
+.editBtn {
+    transform: rotate(-90deg);
+    width: 50px;
+    padding: 5px;
+    cursor: pointer;
+    background: #fff;
+    color: #ccc;
+    border: none;
+    border-bottom: 1.5px solid #ccc;
+    border-radius: 50px 50px 0px 0px;
+
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+@media screen and (max-width:800px) {
+    .bridge-div {
+        top: 30px;
+        height: 15px;
+    }
+
+}
+
+
+
+/*--------------------------------------- Plans + users page ---  */
+
+
+
+
+/*------------------           - Developers */
+.creators {
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+
+    height: 100%;
+
+    line-height: 50px;
+}
+
+.creators > div {
+    width: 240px;
+    margin: 10px auto;
+
+    text-align: center;
+}
+
+.creators .img-profile-small {
+    /*image in Developers*/
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+
+    margin: 10px;
+
+    background: #cccccc40;
+    background-image: url("../img/user-img/debjeet.jpg");
+    background-size: cover;
+
+    border: 0px solid #f00;
+    border-radius: 50px;
+}
+
+.img-profile {
+    /* image mainly in users*/
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+
+    background: #cccccc40;
+    background-image: url(../img/user-img/debjeet.jpg);
+    background-size: cover;
+
+    border: 0px solid #f00;
+    border-radius: 50px;
+}
+
+
+
+
+
+/*--------------------- Login + Forgot Password */
+
+.log-container {
+    margin: 50px auto;
+    padding: 0;
+    width: 70%;
+
+    box-shadow: 0px 0px 10px rgba(225, 225, 225, 0.65),
+        7px 7px 20px rgba(70, 70, 70, 0.2);
+}
+
+.log-side-text {
+    display: inline-block;
+    vertical-align: middle;
+
+    width: calc(100% - 410px);
+    padding: 50px 20px;
+
+    text-align: center;
+}
+
+.home-icon {
+    color: #0099ff;
+    margin: 0;
+    font-size: 38px
+}
+
+.log-side-text > h1 {
+    font-size: 50px
+}
+
+.log-side-text > h2 {
+    font-size: 30px
+}
+
+.log-form {
+    display: inline-block;
+    vertical-align: middle;
+
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    margin: 0;
+
+    background: #0099ff;
+    color: #fff;
+}
+
+.log-img-profile {
+    position: relative;
+    width: 125px;
+    height: 125px;
+
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.log-block {
+    text-align: left;
+    margin: 20px 3px;
+}
+
+label,
+p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.log-input,
+.login-PageBtn {
+    width: 75%;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    margin: 10px;
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+
+    color: #fff;
+}
+
+.login-PageBtn {
+    color: #000;
+    font-size: 20px;
+    font-weight: bolder;
+
+    background: rgb(255, 255, 255);
+    border: 2px solid rgba(0, 225, 225, 0.5);
+    border-radius: 25px;
+
+    padding: 10px;
+    margin: 10px 0px 2px;
+
+    transition: all 0.5s ease-in-out 0s
+}
+
+.login-PageBtn:hover {
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 10px rgba(225, 225, 225, 0.65),
+        5px 5px 15px rgba(70, 70, 70, 0.2);
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.log-input-div {
+    border-bottom: 1.5px solid #fff;
+}
+
+.log-input-div:focus-within {
+    border-bottom: 1.5px solid #000;
+}
+
+
+
+
+@media screen and (min-width:801px) and (max-width:899px) {
+
+    /* mobile Landscape */
+
+    .log-container {
+        margin: 25px auto;
+        padding: 0;
+        width: 90%;
+    }
+
+    .log-side-text {
+
+        width: calc(100%-300px);
+        padding: 30px 20px;
+
+        text-align: center;
+    }
+
+    .log-side-text > h1 {
+        font-size: 35px
+    }
+
+    .home-icon {
+        font-size: 25px;
+
+    }
+
+    .log-side-text > h2 {
+        font-size: 20px;
+    }
+
+    .log-form {
+
+        text-align: center;
+        width: 300px;
+        margin: 0;
+        padding: 32.8px;
+
+    }
+}
+
+
+/*-----------------       mobile portrait */
+@media screen and (max-width:800px) {
+
+    .log-container {
+        margin: 50px auto;
+        padding: 0;
+        width: 90%;
+    }
+
+    .log-side-text {
+
+        display: block;
+        width: 90%;
+        padding: 10px 20px 50px;
+    }
+
+    .log-side-text > h1 {
+        font-size: 30px
+    }
+
+    .home-icon {
+        font-size: 25px
+    }
+
+    .log-side-text > h2 {
+        font-size: 18px;
+    }
+
+    .log-form {
+        display: block;
+
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 50px 0px;
+
+    }
+
+    .log-block {
+        text-align: left;
+        margin: 20px 35px;
+    }
+}
+
+
+
+/*--------------------      Edit Users + Edit Plans       */
+/*--------------------                AND                 */
+/*--------------------      Add Users + Add Plans       */
+
+
+.edit-user-container {
+    margin: 10px auto;
+    width: 70%;
+    box-shadow: 0px 0px 10px rgba(225, 225, 225, 0.65),
+        7px 7px 20px rgba(70, 70, 70, 0.2);
+}
+
+.admin-bar {
+    vertical-align: top;
+    display: inline-block;
+    background: #0099ff;
+
+    padding: 20px 0;
+    height: 430px
+}
+
+.Admin-Profile-img {
+
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+
+    background: #cccccc40;
+    background-image: url(./img/user-img/debjeet.jpg);
+    background-size: cover;
+
+    border: 0px solid #f00;
+    border-radius: 30px;
+
+
+}
+
+.edit-content {
+    padding: 0 25px;
+    width: 63.4%;
+    display: inline-block;
+
+}
+
+.setting-content {
+    padding: 50px 0 25px 100px;
+
+    width: 100%;
+    height: 400px;
+
+
+    box-shadow: 0px 0px 15px rgba(225, 225, 225, 0.65),
+        0px 0px 20px rgba(70, 70, 70, 0.12);
+}
+
+.settings-form {
+    display: inline-block;
+
+    width: calc(100% - 78px);
+}
+
+.setting-content > h1 {
+    text-align: left;
+    margin: 0 0 20px;
+}
+
+.settings-block {
+    margin: 20px 0px;
+}
+
+.settings-text {
+    font-size: 20px;
+    margin: 0 0 10px
+}
+
+.setting-input {
+    background: transparent;
+    font-family: 'Quicksand', sans-serif;
+    outline: none;
+    width: 85%;
+    height: 30px;
+    font-size: 16px;
+    margin: 5px 10px;
+
+    border: none;
+    color: #000;
+
+}
+
+.input-div {
+    padding: 0 15px;
+    border-bottom: 2px solid #fff;
+
+}
+
+.input-div:focus-within {
+    transition: 800ms ease-in-out;
+    border-bottom: 2px solid #0099ff;
+}
+
+.settings-block label {
+    cursor: pointer;
+
+}
+
+input[type='radio'] {
+    margin: 5px 15px;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+
+    transition: ease-in-out 300ms;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #0099ff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+
+    transition: ease-in-out 300ms;
+}
+
+.btn-settings {
+    font-size: 20px;
+    background: transparent;
+    text-align: center;
+
+    padding: 10px 50px;
+    margin: 15px;
+    width: 180px;
+    color: #0099ff;
+
+    border-radius: 30px;
+    transition: 0.3s;
+    border: 1px solid #000;
+
+
+}
+
+.btn-settings:hover {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 10px rgba(225, 225, 225, 0.65),
+        5px 5px 15px rgba(70, 70, 70, 0.2);
+}
+
+
+.select-switches {
+    vertical-align: ;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    width: 25%;
+    height: 430px;
+
+    padding: 20px 30px;
+
+    display: inline-block;
+    background: #0099ff;
+    color: #fff;
+    margin: 0;
+}
+
+.select-switches > h2 {
+    font-size: 20px;
+}
+
+.room-text {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 30px;
+    padding-left: 20px;
+
+    color: #fff;
+}
+
+.check-holder {
+    position: relative;
+
+    font-weight: 500;
+    font-size: 17px;
+    margin: 10px;
+
+    cursor: pointer;
+}
+
+.check-box {
+    width: 10px;
+    height: 10px;
+
+    text-align: center;
+    padding: 5px;
+    margin-right: 20px;
+    font-size: 10px;
+
+    border-radius: 20px;
+    background: #fff;
+
+}
+
+.check-block-div {
+    position: relative;
+    border-left: 1.5px solid #000;
+    padding-left: 20px;
+}
+
+.check-all {
+    position: absolute;
+    top: 0;
+    left: -14px;
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    border: 1.5px solid #000;
+    z-index: 1;
+}
+
+.connect {
+    width: 30px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 12px;
+    left: -32px;
+
+    color: #000;
+}
+
+
+.edit-user-img-profile {
+    /* image mainly in users*/
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 20px 33px;
+
+    background: #ccc;
+    background-image: url(../img/user-img/debjeet.jpg);
+    background-size: cover;
+
+
+    border: 2px solid transparent;
+    color: transparent;
+    border-radius: 50px;
+
+    cursor: pointer;
+}
+
+.plans-U-img-check {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 25px;
+}
+
+
+@media screen and (min-width:801px) and (max-width:899px) {
+
+    .edit-user-container {
+        margin: 10px auto;
+        width: 90%;
+    }
+
+    .edit-content {
+        width: 51%;
+
+    }
+
+    .edit-user-img-profile {
+        margin: 20px 5px;
+
+    }
+
+    .select-switches {
+
+        width: 33%;
+        height: 430px;
+    }
+
+    .btn-settings {
+        padding: 10px 5px;
+        margin: 10px;
+        width: 120px;
+        color: #0099ff;
+
+
+    }
+
+}
+
+
+
+/*-----------------       mobile portrait */
+@media screen and (max-width:800px) {
+    .edit-user-container {
+
+        margin: 15px auto 50px;
+        width: 90%;
+    }
+
+    .admin-bar {
+        vertical-align: top;
+        display: block;
+        background: #0099ff;
+
+        padding: 20px 0;
+        height: 30px;
+    }
+
+    .Admin-Profile-img {
+
+        width: 80px;
+        height: 80px;
+        margin: 0px 0 0 25px;
+
+        background: #ccc;
+        background-image: url(./img/user-img/debjeet.jpg);
+        background-size: cover;
+
+        border: 0px solid #f00;
+        border-radius: 50px;
+
+
+    }
+
+    .edit-content {
+        padding: 50px 30px;
+        width: 100%;
+        display: block;
+
+    }
+
+    .edit-user-img-profile {
+        margin: 20px 1px;
+    }
+
+
+    .btn-settings {
+        font-size: 18px;
+        background: transparent;
+        text-align: center;
+
+        width: 125px;
+        padding: 8px 20px;
+        margin: 15px 10px;
+        color: #0099ff;
+
+        border-radius: 30px;
+        transition: 0.3s;
+        border: 1px solid #000;
+
+
+    }
+
+    .select-switches {
+
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        width: 100%;
+        height: 430px;
+
+        padding: 20px 39px;
+
+        display: block;
+        background: #0099ff;
+        color: #fff;
+        margin: 0px;
+    }
+}
