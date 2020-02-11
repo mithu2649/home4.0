@@ -115,7 +115,7 @@ require_once "header.php";
             Yeah ! <br>
             but why anything serious
         </div>
-        <br>
+        <br><br><br><br><br>
     </div>
 
 
@@ -180,7 +180,7 @@ require_once "header.php";
         height: 50px;
         margin: 10px;
         background: #cccccc40;
-        background-image: url(../img/user-img/debjeet.jpg);
+        background-image: url(img/user-img/debjeet.jpg);
         background-size: cover;
         border: 2px solid #0099ff;
         border-radius: 30px;
@@ -216,7 +216,7 @@ require_once "header.php";
         border-radius: 50px;
 
         background: #fff;
-        background-image: url(./img/user-img/abh.jpg);
+        background-image: url(img/user-img/abh.jpg);
         background-position: center;
         background-size: cover;
     }
