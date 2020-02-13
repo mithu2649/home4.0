@@ -16,8 +16,8 @@ $page = ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF'])));
 
 
     <link rel="icon" href="./img/Home 4.0.png">
-    <link rel="stylesheet" href="css/style.css?ver=1.5" type="text/css" />
-    <link rel="stylesheet" href="css/main.css?ver=1.5" type="text/css" />
+    <link rel="stylesheet" href="css/style.css?ver=1.<?php echo rand(0,9); ?>" type="text/css" />
+    <link rel="stylesheet" href="css/main.css?ver=1.<?php echo rand(0,9); ?>" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet" />
 
 
@@ -33,13 +33,13 @@ $page = ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF'])));
 
         <table border="1" class="toggleAdjust inliner onlyphone">
             <tr>
-                <td></td>
+                <td> </td>
                 <td>
                     <span class="menuToggle onlyphone" stat="1">
                         <i class="fas fa-sort-down fa-1g" style="margin:0"></i>
                     </span>
                 </td>
-                <td></td>
+                <td> </td>
             </tr>
         </table>
 

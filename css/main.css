@@ -128,24 +128,24 @@ a {
     /*border: 1px solid red;*/
     margin-top: 20px;
 }
-.toggleAdjust tr td{
-    width: 23%;
+.toggleAdjust tr td {
+    width: 24%;
 }
 
-    .menuToggle {
-        width: 45px;
-        height: 45px;
-        border-radius: 5px;
-        font-size: 25px;
-        padding-top: 2px;
-        background: #FFFFFF;
-        color: #CCCCCC;
-        border-radius: 30px;
-        transition: 300ms;
-        box-shadow: 0px 3px 5px rgba(225, 225, 225, 0.65), 0px 3px 5px rgba(60, 60, 60, 0.12), 0px 3px 10px rgba(70, 70, 70, 0.05);
-        text-align: center;
-        vertical-align: middle;
-    }
+.menuToggle {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 25px;
+    padding-top: 2px;
+    background: #FFFFFF;
+    color: #CCCCCC;
+    border-radius: 30px;
+    transition: 300ms;
+    box-shadow: 0px 3px 5px rgba(225, 225, 225, 0.65), 0px 3px 5px rgba(60, 60, 60, 0.12), 0px 3px 10px rgba(70, 70, 70, 0.05);
+    text-align: center;
+    vertical-align: middle;
+}
 
 /*---------------media query [nav Bar]--------------*/
 @media screen and (min-width:900px) and (max-width:1350px) {
