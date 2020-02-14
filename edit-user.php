@@ -1,10 +1,6 @@
 <?php
 require_once "header.php";
-?>
 
-
-
-<?php
 
 if(isset($_GET['sec'])){
     $sec = $_GET['sec'];
@@ -421,19 +417,10 @@ if($sec == "edit"){//================Edit Users
 
 
 <?php
-}else{
-    ?>
-<script>
-    window.location = "404.php";
 
-</script>
-<?php
+}else{
+    header('location: 404.php');
 }
 
-?>
-
-
-
-<?php
 require_once "footer.php";
 ?>
