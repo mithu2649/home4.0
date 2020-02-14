@@ -16,8 +16,8 @@ $page = ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF'])));
 
 
     <link rel="icon" href="./img/Home 4.0.png">
-    <link rel="stylesheet" href="css/style.css?ver=1.<?php echo rand(0,9); ?>" type="text/css" />
-    <link rel="stylesheet" href="css/main.css?ver=1.<?php echo rand(0,9); ?>" type="text/css" />
+    <link rel="stylesheet" href="css/style.css?ver=2.<?php echo rand(0,9); ?>" type="text/css" />
+    <link rel="stylesheet" href="css/main.css?ver=2.<?php echo rand(0,9); ?>" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet" />
 
 
