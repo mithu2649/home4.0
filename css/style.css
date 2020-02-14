@@ -135,7 +135,7 @@ sup {
 
 .power-button {
     border: 3px solid #fff;
-
+    color: #ccc;
     position: absolute;
     right: 5px;
     top: -3px;
@@ -160,6 +160,8 @@ sup {
         0px 0px 20px rgba(50, 50, 50, 0.12);
 
 }
+
+.power-button i{color: inherit !important;}
 
 button {
     outline: 0;

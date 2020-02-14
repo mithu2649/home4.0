@@ -15,7 +15,7 @@ require_once "header.php";
             <div class="plans-text">Abhishek <sup id="active1"> Online </sup></div>
         </div>
         <div class="bridge-div" id="brg1">.</div>
-        <div class="power-button" id="powerbtn1" value="off" onclick="block1()"><i class="fa fa-ban fa-3x" style="color: #ccc" id="btn1"></i></div>
+        <div class="power-button" id="powerbtn1" status="off" onclick="block1()"><i class="fa fa-ban fa-3x" style="color: #ccc" id="btn1"></i></div>
     </div>
 
     <div class="plan-div">
@@ -27,7 +27,7 @@ require_once "header.php";
             <div class="plans-text">Debjeet <sup id="active2"> Online </sup></div>
         </div>
         <div class="bridge-div" id="brg2">.</div>
-        <div class="power-button" id="powerbtn2" value="off" onclick="block2()"><i class="fa fa-ban fa-3x" style="color: #ccc" id="btn2"></i></div>
+        <div class="power-button" id="powerbtn2" status="off" onclick="block2()"><i class="fa fa-ban fa-3x" style="color: #ccc" id="btn2"></i></div>
     </div>
 
     <div class="plan-div">
@@ -38,7 +38,7 @@ require_once "header.php";
             <div class="plans-text">Rahul <sup id="active3"> Online </sup></div>
         </div>
         <div class="bridge-div" id="brg3">.</div>
-        <div class="power-button" id="powerbtn3" value="off" onclick="block3()"><i class="fa fa-ban fa-3x" style="color: #ccc" id="btn3"></i></div>
+        <div class="power-button" id="powerbtn3" status="off" onclick="block3()"><i class="fa fa-ban fa-3x" style="color: #ccc" id="btn3"></i></div>
     </div>
 
     <div class="plan-div">
@@ -49,7 +49,7 @@ require_once "header.php";
             <div class="plans-text">Anushka <sup id="active4"> Online </sup></div>
         </div>
         <div class="bridge-div" id="brg4">.</div>
-        <div class="power-button" id="powerbtn4" value="off" onclick="block4()"><i class="fa fa-ban fa-3x" style="color: #ccc" id="btn4"></i></div>
+        <div class="power-button" id="powerbtn4" status="off" onclick="block4()"><i class="fa fa-ban fa-3x" style="color: #ccc" id="btn4"></i></div>
     </div>
 
     <div class="plan-div">
@@ -60,7 +60,7 @@ require_once "header.php";
             <div class="plans-text">Shubhajit <sup id="active5"> Online </sup></div>
         </div>
         <div class="bridge-div" id="brg5">.</div>
-        <div class="power-button" id="powerbtn5" value="off" onclick="block5()"><i class="fa fa-ban fa-3x" style="color: #ccc" id="btn5"></i></div>
+        <div class="power-button" id="powerbtn5" status="off" onclick="block5()"><i class="fa fa-ban fa-3x" style="color: #ccc" id="btn5"></i></div>
     </div>
 
     <div class="plan-div">
@@ -71,7 +71,7 @@ require_once "header.php";
             <div class="plans-text">Koyel <sup id="active6"> Online </sup></div>
         </div>
         <div class="bridge-div" id="brg6">.</div>
-        <div class="power-button" id="powerbtn6" value="off" onclick="block6()"><i class="fa fa-ban fa-3x" style="color: #ccc" id="btn6"></i></div>
+        <div class="power-button" id="powerbtn6" status="off" onclick="block6()"><i class="fa fa-ban fa-3x" style="color: #ccc" id="btn6"></i></div>
     </div>
 
     <div class="plan-div">
@@ -82,7 +82,7 @@ require_once "header.php";
             <div class="plans-text">Souvik <sup id="active7"> Online </sup></div>
         </div>
         <div class="bridge-div" id="brg7">.</div>
-        <div class="power-button" id="powerbtn7" value="off" onclick="block7()"><i class="fa fa-ban fa-3x" style="color: #ccc" id="btn7"></i></div>
+        <div class="power-button" id="powerbtn7" status="off" onclick="block7()"><i class="fa fa-ban fa-3x" style="color: #ccc" id="btn7"></i></div>
     </div>
 
     <div class="plan-div">
@@ -93,7 +93,7 @@ require_once "header.php";
             <div class="plans-text">Piu <sup id="active8"> Online </sup></div>
         </div>
         <div class="bridge-div" id="brg8">.</div>
-        <div class="power-button" id="powerbtn8" value="off" onclick="block8()"><i class="fa fa-ban fa-3x" style="color: #ccc" id="btn8"></i></div>
+        <div class="power-button" id="powerbtn8" status="off" onclick="block8()"><i class="fa fa-ban fa-3x" style="color: #ccc" id="btn8"></i></div>
     </div>
 
     <div class="plan-div">
@@ -104,7 +104,7 @@ require_once "header.php";
             <div class="plans-text">Guest 1 <sup id="active9"> Online </sup></div>
         </div>
         <div class="bridge-div" id="brg9">.</div>
-        <div class="power-button" id="powerbtn9" value="off" onclick="block9()"><i class="fa fa-ban fa-3x" style="color: #ccc" id="btn9"></i></div>
+        <div class="power-button" id="powerbtn9" status="off" onclick="block9()"><i class="fa fa-ban fa-3x" style="color: #ccc" id="btn9"></i></div>
     </div>
 
     <div class="plan-div">
@@ -115,7 +115,7 @@ require_once "header.php";
             <div class="plans-text">Guest 2 <sup id="active10"> Online </sup></div>
         </div>
         <div class="bridge-div" id="brg10">.</div>
-        <div class="power-button" id="powerbtn10" value="off" onclick="block10()"><i class="fa fa-ban fa-3x" style="color: #ccc" id="btn10"></i></div>
+        <div class="power-button" id="powerbtn10" status="off" onclick="block10()"><i class="fa fa-ban fa-3x" style="color: #ccc" id="btn10"></i></div>
     </div>
     <div>
         <a href="Edit-user?sec=add">
@@ -146,3 +146,52 @@ require_once "header.php";
 <?php
 require_once "footer.php";
 ?>
+
+<script>
+    $(document).ready(function(){
+    $(".power-button[status*='o']").click(function(){
+        var el = $(this).parent();
+        var status = $(this).attr("status");
+        //alert(status);
+        if(status == "off"){//for turning on
+
+            el.find(".planTextedit").css({
+                "borderColor": "#ff0000"
+            });
+            el.find(".bridge-div").css({
+                "background": "#ff0000"
+            });
+            $(this).css({
+                "color": "#ff0000",
+                "borderColor": "#ff0000"
+            });
+            el.find(".plans-text").children("sup").html("Blocked");
+            el.find(".plans-text").children("sup").css({
+                "color": "#f00"
+            });
+            $(this).attr("status", "on");
+
+        }else{//for turning off
+
+            el.find(".planTextedit").css({
+                "borderColor": "#fff"
+            });
+            el.find(".bridge-div").css({
+                "background": "#fff"
+            });
+            $(this).css({
+                "color": "#ccc",
+                "borderColor": "#fff"
+            });
+            el.find(".plans-text").children("sup").html("Online");
+            el.find(".plans-text").children("sup").css({
+                "color": "#0099ff"
+            });
+            $(this).attr("status", "off");
+            
+        }
+        
+    });
+    //switches
+});
+</script>
