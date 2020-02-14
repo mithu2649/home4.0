@@ -17,7 +17,7 @@ if($sec == "edit"){//================Edit Users
 
 <div class="edit-user-container">
     <div class="admin-bar inliner">
-        <div class="Admin-Profile-img" style="background-image: url(./img/user-img/debjeet.jpg);"></div>
+        <div class="Admin-Profile-img" style="background-image: url(img/user-img/debjeet.jpg);"></div>
     </div>
     <form class="settings-form" autocomplete="off" id="Profile-set">
         <div class="edit-content" style="vertical-align:top;">
@@ -30,35 +30,35 @@ if($sec == "edit"){//================Edit Users
                 <div class="settings-text" onclick="allowAllusers()" value="off" style="cursor:pointer;"> Select User <span style="font-size:18px;color:#dedede;" id="allowAllusers"><i class="fas fa-check"></i><i class="fas fa-check" style="position:relative;right:12px;"></i></span></div>
 
 
-                <div class="edit-user-img-profile" style="background-image:url(./img/user-img/abh.jpg)" onclick="allowU1()" value="off" id="img-profile-plans1">
+                <div class="edit-user-img-profile" style="background-image:url(img/user-img/abh.jpg)" onclick="allowU1()" value="off" id="img-profile-plans1">
                     <div class="plans-U-img-check"><i class="fas fa-check"></i></div>
                 </div>
 
-                <div class="edit-user-img-profile" style="" onclick="allowU2()" value="off" id="img-profile-plans2">
+                <div class="edit-user-img-profile" style="background-image:url(img/user-img/debjeet.jpg)" onclick="allowU2()" value="off" id="img-profile-plans2">
                     <div class="plans-U-img-check"><i class="fas fa-check"></i></div>
                 </div>
-                <div class="edit-user-img-profile" style=" background-image:url(./img/user-img/rahul.jpg)" onclick="allowU3()" value="off" id="img-profile-plans3">
+                <div class="edit-user-img-profile" style="background:url(img/user-img/rahul.jpg)" onclick="allowU3()" value="off" id="img-profile-plans3">
                     <div class="plans-U-img-check"><i class="fas fa-check"></i></div>
                 </div>
-                <div class="edit-user-img-profile" style=" background-image:url(./img/user-img/anu.jpg)" onclick="allowU4()" value="off" id="img-profile-plans4">
+                <div class="edit-user-img-profile" style="background:url(img/user-img/anu.jpg)" onclick="allowU4()" value="off" id="img-profile-plans4">
                     <div class="plans-U-img-check"><i class="fas fa-check"></i></div>
                 </div>
-                <div class="edit-user-img-profile" style=" background-image:url(./img/user-img/shu.jpg)" onclick="allowU5()" value="off" id="img-profile-plans5">
+                <div class="edit-user-img-profile" style="background:url(img/user-img/shu.jpg)" onclick="allowU5()" value="off" id="img-profile-plans5">
                     <div class="plans-U-img-check"><i class="fas fa-check"></i></div>
                 </div>
-                <div class="edit-user-img-profile" style=" background-image:url(./img/user-img/koyel.jpg)" onclick="allowU6()" value="off" id="img-profile-plans6">
+                <div class="edit-user-img-profile" style="background:url(img/user-img/koyel.jpg)" onclick="allowU6()" value="off" id="img-profile-plans6">
                     <div class="plans-U-img-check"><i class="fas fa-check"></i></div>
                 </div>
-                <div class="edit-user-img-profile" style=" background-image:url(./img/user-img/souvik.jpg)" onclick="allowU7()" value="off" id="img-profile-plans7">
+                <div class="edit-user-img-profile" style="background:url(img/user-img/souvik.jpg)" onclick="allowU7()" value="off" id="img-profile-plans7">
                     <div class="plans-U-img-check"><i class="fas fa-check"></i></div>
                 </div>
-                <div class="edit-user-img-profile" style=" background-image:url(./img/user-img/piu.jpg)" onclick="allowU8()" value="off" id="img-profile-plans8">
+                <div class="edit-user-img-profile" style="background:url(img/user-img/piu.jpg)" onclick="allowU8()" value="off" id="img-profile-plans8">
                     <div class="plans-U-img-check"><i class="fas fa-check"></i></div>
                 </div>
-                <div class="edit-user-img-profile" style=" background-image:url(./img/user-img/guest1.png)" onclick="allowU9()" value="off" id="img-profile-plans9">
+                <div class="edit-user-img-profile" style="background:url(img/user-img/guest1.png)" onclick="allowU9()" value="off" id="img-profile-plans9">
                     <div class="plans-U-img-check"><i class="fas fa-check"></i></div>
                 </div>
-                <div class="edit-user-img-profile" style=" background-image:url(./img/user-img/guest2.png)" onclick="allowU10()" value="off" id="img-profile-plans10">
+                <div class="edit-user-img-profile" style="background:url(img/user-img/guest2.png)" onclick="allowU10()" value="off" id="img-profile-plans10">
                     <div class="plans-U-img-check"><i class="fas fa-check"></i></div>
                 </div>
 
@@ -238,7 +238,7 @@ if($sec == "edit"){//================Edit Users
 
 <div class="edit-user-container">
     <div class="admin-bar inliner">
-        <div class="Admin-Profile-img" style="background-image: url(./img/user-img/debjeet.jpg);"></div>
+        <div class="Admin-Profile-img" style="background-image: url(img/user-img/debjeet.jpg);"></div>
     </div>
     <form class="settings-form" autocomplete="off" id="Profile-set">
         <div class="edit-content" style="vertical-align:top;">
@@ -251,35 +251,35 @@ if($sec == "edit"){//================Edit Users
                 <div class="settings-text" onclick="allowAllusers()" value="off" style="cursor:pointer;"> Select User <span style="font-size:18px;color:#dedede;" id="allowAllusers"><i class="fas fa-check"></i><i class="fas fa-check" style="position:relative;right:12px;"></i></span></div>
 
 
-                <div class="edit-user-img-profile" style="background-image:url(./img/user-img/abh.jpg)" onclick="allowU1()" value="off" id="img-profile-plans1">
+                <div class="edit-user-img-profile" style="background-image:url(img/user-img/abh.jpg)" onclick="allowU1()" value="off" id="img-profile-plans1">
                     <div class="plans-U-img-check"><i class="fas fa-check"></i></div>
                 </div>
 
                 <div class="edit-user-img-profile" style="" onclick="allowU2()" value="off" id="img-profile-plans2">
                     <div class="plans-U-img-check"><i class="fas fa-check"></i></div>
                 </div>
-                <div class="edit-user-img-profile" style=" background-image:url(./img/user-img/rahul.jpg)" onclick="allowU3()" value="off" id="img-profile-plans3">
+                <div class="edit-user-img-profile" style=" background-image:url(img/user-img/rahul.jpg)" onclick="allowU3()" value="off" id="img-profile-plans3">
                     <div class="plans-U-img-check"><i class="fas fa-check"></i></div>
                 </div>
-                <div class="edit-user-img-profile" style=" background-image:url(./img/user-img/anu.jpg)" onclick="allowU4()" value="off" id="img-profile-plans4">
+                <div class="edit-user-img-profile" style=" background-image:url(img/user-img/anu.jpg)" onclick="allowU4()" value="off" id="img-profile-plans4">
                     <div class="plans-U-img-check"><i class="fas fa-check"></i></div>
                 </div>
-                <div class="edit-user-img-profile" style=" background-image:url(./img/user-img/shu.jpg)" onclick="allowU5()" value="off" id="img-profile-plans5">
+                <div class="edit-user-img-profile" style=" background-image:url(img/user-img/shu.jpg)" onclick="allowU5()" value="off" id="img-profile-plans5">
                     <div class="plans-U-img-check"><i class="fas fa-check"></i></div>
                 </div>
-                <div class="edit-user-img-profile" style=" background-image:url(./img/user-img/koyel.jpg)" onclick="allowU6()" value="off" id="img-profile-plans6">
+                <div class="edit-user-img-profile" style=" background-image:url(img/user-img/koyel.jpg)" onclick="allowU6()" value="off" id="img-profile-plans6">
                     <div class="plans-U-img-check"><i class="fas fa-check"></i></div>
                 </div>
-                <div class="edit-user-img-profile" style=" background-image:url(./img/user-img/souvik.jpg)" onclick="allowU7()" value="off" id="img-profile-plans7">
+                <div class="edit-user-img-profile" style=" background-image:url(img/user-img/souvik.jpg)" onclick="allowU7()" value="off" id="img-profile-plans7">
                     <div class="plans-U-img-check"><i class="fas fa-check"></i></div>
                 </div>
-                <div class="edit-user-img-profile" style=" background-image:url(./img/user-img/piu.jpg)" onclick="allowU8()" value="off" id="img-profile-plans8">
+                <div class="edit-user-img-profile" style=" background-image:url(img/user-img/piu.jpg)" onclick="allowU8()" value="off" id="img-profile-plans8">
                     <div class="plans-U-img-check"><i class="fas fa-check"></i></div>
                 </div>
-                <div class="edit-user-img-profile" style=" background-image:url(./img/user-img/guest1.png)" onclick="allowU9()" value="off" id="img-profile-plans9">
+                <div class="edit-user-img-profile" style=" background-image:url(img/user-img/guest1.png)" onclick="allowU9()" value="off" id="img-profile-plans9">
                     <div class="plans-U-img-check"><i class="fas fa-check"></i></div>
                 </div>
-                <div class="edit-user-img-profile" style=" background-image:url(./img/user-img/guest2.png)" onclick="allowU10()" value="off" id="img-profile-plans10">
+                <div class="edit-user-img-profile" style=" background-image:url(img/user-img/guest2.png)" onclick="allowU10()" value="off" id="img-profile-plans10">
                     <div class="plans-U-img-check"><i class="fas fa-check"></i></div>
                 </div>
 
