@@ -539,6 +539,13 @@ a {
     margin: 0 0 10px
 }
 
+.settings-text[status="off"] span#allowAllusers{
+    color: #dedede;
+}
+.settings-text[status="on"] span#allowAllusers{
+    color: #0099ff;
+}
+
 .setting-input {
     background: transparent;
     font-family: 'Quicksand', sans-serif;
@@ -667,6 +674,14 @@ input[type='radio']:checked:after {
 
     cursor: pointer;
 }
+.check-holder[status="off"] .check-box{
+    color: #fff;
+    transition: ease-in-out 200ms;
+}
+.check-holder[status="on"] .check-box{
+    color: #000;
+    transition: ease-in-out 200ms;
+}
 
 .check-box {
     width: 10px;
@@ -699,6 +714,15 @@ input[type='radio']:checked:after {
     z-index: 1;
 }
 
+.check-all[status="off"]{
+    color: #fff;
+    transition: ease-in-out 200ms;
+}
+.check-all[status="on"]{
+    color: #000;
+    transition: ease-in-out 200ms;
+}
+
 .connect {
     width: 30px;
     border: 1px solid #000;
@@ -727,6 +751,17 @@ input[type='radio']:checked:after {
     border-radius: 50px;
 
     cursor: pointer;
+}
+
+.edit-user-img-profile[status="off"]{
+    border-color: transparent;
+    color: transparent;
+    transition: ease-in-out 200ms;
+}
+.edit-user-img-profile[status="on"]{
+    border-color: #00ff67;
+    color: #00ff67;
+    transition: ease-in-out 200ms;
 }
 
 .plans-U-img-check {
