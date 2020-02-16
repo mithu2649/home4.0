@@ -1,4 +1,4 @@
-/* this the main javascript file [ includes all js ] */
+/* ====================This the main javascript file [ includes all js ]==================== */
 
 
 $(document).ready(function () {

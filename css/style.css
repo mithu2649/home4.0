@@ -539,10 +539,10 @@ a {
     margin: 0 0 10px
 }
 
-.settings-text[status="off"] span#allowAllusers{
+.settings-text[status="off"] span{
     color: #dedede;
 }
-.settings-text[status="on"] span#allowAllusers{
+.settings-text[status="on"] span{
     color: #0099ff;
 }
 
@@ -746,7 +746,7 @@ input[type='radio']:checked:after {
     background-size: cover;
     background-repeat: no-repeat;
 
-    border: 2px solid transparent;
+    border: 2px solid #fff;
     color: transparent;
     border-radius: 50px;
 
@@ -754,7 +754,7 @@ input[type='radio']:checked:after {
 }
 
 .edit-user-img-profile[status="off"]{
-    border-color: transparent;
+    border-color: #fff;
     color: transparent;
     transition: ease-in-out 200ms;
 }
@@ -832,7 +832,7 @@ input[type='radio']:checked:after {
         margin: 0px 0 0 25px;
 
         background: #ccc;
-        background-image: url(./img/user-img/debjeet.jpg);
+        background-image: url(../img/user-img/debjeet.jpg);
         background-size: cover;
 
         border: 0px solid #f00;
