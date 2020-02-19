@@ -24,7 +24,7 @@ require_once "header.php"
 
                 <div class="log-block">
                     <p> Password </p>
-                    <div class="log-input-div"><i class="fa fa-key"></i><input class="log-input" type="password" name="password" id="myInput" required /><i class="fa fa-eye-slash" hidden="true" onclick="myFunction()" id="eye"></i> </div>
+                    <div class="log-input-div"><i class="fa fa-key"></i><input class="log-input" type="password" name="userpassword" id="myInput" required /><i class="fa fa-eye-slash" hidden="true" onclick="myFunction()" id="eye"></i> </div>
                 </div>
             </div>
             <p><a href="forgot-password.php" style="color:#000"><strong> Forgot Password ? </strong></a></p>
@@ -34,15 +34,23 @@ require_once "header.php"
     </div>
 </div>
 <?php
-if(isset($_POST[''])){
-    
+if(isset($user)){
+    echo "<br>Already Loggedin";
+}
+if(isset($_POST['username'])){
+    include "sdk/set-login.php";
+    $username = $_POST['username'];
+    $password = hash('sha1',"vErNuRaBlEeNcRyPtIoNbYtEaMhoMeFoUrPoInT0".$_POST['userpassword']);
+    $log = new login;
+    $log->newlogin($username, $password);
+    header('location: login');
 }
 ?>
 
 
-<style>
 
-</style>
+
+
 <?php
 require_once "footer.php"
 ?>

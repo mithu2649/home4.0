@@ -1,4 +1,6 @@
 <?php
+require_once "sdk/settings.php";
+
 $page = ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF'])));
 ?>
 <!DOCTYPE html>
@@ -44,21 +46,39 @@ $page = ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF'])));
         </table>
 
         <div class="navBtn inliner">
+            <?php
+            if(isset($_COOKIE['HOMEID'])){
+                include "sdk/set-login.php";
+                $user = $_COOKIE['HOMEID'];
+                $log = new login;
+                $user = json_decode($log->setlogin($user));
+                ?>
+                <a <?php if($page == "Switches"){echo 'class="active"';}else{echo ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF'])));} ?> href="switches"><span>S</span>witches</a>
 
-            <a <?php if($page == "Switches"){echo 'class="active"';}else{echo ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF'])));} ?> href="switches"><span>S</span>witches</a>
+                <a <?php if($page == "Plans"){echo 'class="active"';}else{echo ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF']))); } ?> href="plans"><span>P</span>lans</a>
 
-            <a <?php if($page == "Plans"){echo 'class="active"';}else{echo ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF']))); } ?> href="plans"><span>P</span>lans</a>
+                <a <?php if($page == "Chat"){echo 'class="active"';}else{echo ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF'])));} ?> href="chat"><span>C</span>hat</a>
 
-            <a <?php if($page == "Chat"){echo 'class="active"';}else{echo ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF'])));} ?> href="chat"><span>C</span>hat</a>
-
-            <a <?php if($page == "Settings"){echo 'class="active"';}else{echo ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF'])));} ?> href="user-settings"><span>S</span>ettings</a>
+                <a <?php if($page == "Settings"){echo 'class="active"';}else{echo ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF'])));} ?> href="user-settings"><span>S</span>ettings</a>
+                <?php
+            }
+            ?>
 
             <a <?php if($page == "Developers"){echo 'class="active"';}else{echo ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF'])));} ?> id="noborder" href="developers"><span>D</span>evelopers <span><i class="fas fa-code" style="font-size:15px;color:#0099ff"></i></span></a>
             <!-- <a class="links" href="plans.php">About</a>-->
 
         </div>
         <a class="inliner" href="help.php" style="float:right; margin: 12px 12px 0 25px;color:#0099ff;"><i class="far fa-question-circle"></i></a>
-        <div class="logBtn inliner"><a class="links" href="login" style="padding: 3px 10px 4px;">Login</a></div>
-
+        <?php
+        if(isset($user)){
+            ?>
+            <div class="logBtn inliner"><a class="links" href="logout" style="padding: 3px 10px 4px;">Logout</a></div>
+            <?php
+        }else{
+            ?>
+            <div class="logBtn inliner"><a class="links" href="login" style="padding: 3px 10px 4px;">Login</a></div>
+            <?php
+        }
+        ?>
 
     </div>
