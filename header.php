@@ -11,7 +11,7 @@ $page = ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF'])));
 
 
     <!--fontawsome styles -->
-    <script src="https://kit.fontawesome.com/76c40a5f57.js" crossorigin="anonymous"></script>
+    <script src="fontawesome-free-5.12.0-web/fontawesome.js" crossorigin="anonymous"></script>
     <link href="fontawesome-free-5.12.0-web/fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
 
 
@@ -62,4 +62,3 @@ $page = ucwords(str_replace(".php", "", basename($_SERVER['PHP_SELF'])));
 
 
     </div>
-    <div class="spaceEater"></div>

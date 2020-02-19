@@ -2,6 +2,7 @@
 require_once "header.php";
 ?>
 
+<div class="spaceEater"></div>
 
 
 <h1><span style="color:#0099ff;margin:0;">U</span>sers </h1>

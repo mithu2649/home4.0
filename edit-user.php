@@ -1,7 +1,10 @@
 <?php
 require_once "header.php";
 
+?>
 
+<div class="spaceEater"></div>
+<?php
 if(isset($_GET['sec'])){
     $sec = $_GET['sec'];
 }

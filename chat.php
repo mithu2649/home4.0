@@ -2,6 +2,7 @@
 require_once "header.php";
 ?>
 
+<div class="spaceEater"></div>
 <div class="chat-container">
     <!--<div class="user-profile " style="">
         <div class="img-profile log-img-profile" style="background-image: url(./img/user-img/debjeet.jpg);"></div>

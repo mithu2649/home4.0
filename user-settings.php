@@ -2,6 +2,7 @@
 require_once "header.php"
 ?>
 
+<div class="spaceEater"></div>
 <div class="setting-container">
     <div class="setting-content inliner" id="con">
 

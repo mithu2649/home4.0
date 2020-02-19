@@ -3,6 +3,7 @@ require_once "header.php";
 ?>
 
 
+<div class="spaceEater"></div>
 
 <div class="plan-container">
     <h1><span style="color:#0099ff;margin:0;">S</span>witches</h1>
