@@ -35,7 +35,7 @@ require_once "header.php"
 </div>
 <?php
 if(isset($user)){
-    echo "<br>Already Loggedin";
+    header('location: switches');
 }
 if(isset($_POST['username'])){
     include "sdk/set-login.php";
@@ -43,7 +43,7 @@ if(isset($_POST['username'])){
     $password = hash('sha1',"vErNuRaBlEeNcRyPtIoNbYtEaMhoMeFoUrPoInT0".$_POST['userpassword']);
     $log = new login;
     $log->newlogin($username, $password);
-    header('location: login');
+    header('location: switches');
 }
 ?>
 
