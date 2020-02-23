@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 19, 2020 at 09:19 PM
+-- Generation Time: Feb 23, 2020 at 10:21 AM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 5.6.32
 
@@ -49,6 +49,28 @@ CREATE TABLE `appliances` (
   `icon` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `appliances`
+--
+
+INSERT INTO `appliances` (`id`, `app_name`, `room_id`, `status`, `icon`) VALUES
+(1, 'Light Bulb 1', 1, 'on', 'fa-lightbulb-o'),
+(2, 'Light Bulb 2', 1, 'on', 'fa-lightbulb-o'),
+(3, 'Fan', 1, 'off', 'fa-fan'),
+(4, 'Plug', 1, 'off', 'fa-plug'),
+(5, 'Light Bulb 1', 2, 'off', 'fa-lightbulb-o'),
+(6, 'Light Bulb 2', 2, 'off', 'fa-lightbulb-o'),
+(7, 'Fan', 2, 'off', 'fa-fan'),
+(8, 'Plug', 2, 'off', 'fa-plug'),
+(9, 'Light Bulb', 3, 'off', 'fa-lightbulb-o'),
+(10, 'Fan', 3, 'off', 'fa-fan'),
+(11, 'Television', 3, 'off', 'fa-television'),
+(12, 'Plug', 3, 'off', 'fa-plug'),
+(13, 'Light Bulb', 4, 'off', 'fa-lightbulb-o'),
+(14, 'Exhaust Fan', 4, 'off', 'fa-afn'),
+(15, 'Light Bulb', 5, 'off', 'fa-lightbulb-o'),
+(16, 'Exhaust Fan', 5, 'off', 'fa-fan');
+
 -- --------------------------------------------------------
 
 --
@@ -65,13 +87,25 @@ CREATE TABLE `plans` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `room`
+-- Table structure for table `rooms`
 --
 
-CREATE TABLE `room` (
+CREATE TABLE `rooms` (
   `id` bigint(255) NOT NULL,
-  `room_name` varchar(255) NOT NULL
+  `room_name` varchar(255) NOT NULL,
+  `icon` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `rooms`
+--
+
+INSERT INTO `rooms` (`id`, `room_name`, `icon`) VALUES
+(1, 'Room 1', 'fa-bed'),
+(2, 'Room 2', 'fa-bed'),
+(3, 'Hall Room', 'fa-couch'),
+(4, 'Kitchen', 'fa-utensils'),
+(5, 'Bathroom', 'fa-bath');
 
 -- --------------------------------------------------------
 
@@ -97,7 +131,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `role`, `device_id`, `app_allowed`, `plan_allowed`, `status`, `last_loggedin`) VALUES
-(1, 'pandey', 'abhishekap2001@gmail.com', 'f362bd6883b7f4d5d02efcebd874900f6994f39c', 'admin', '2b70b034898f77b5e6ab43e865955151baf07ae9', '', '', '', '2020-02-19 20:16:52');
+(1, 'pandey', 'abhishekap2001@gmail.com', 'f362bd6883b7f4d5d02efcebd874900f6994f39c', 'admin', '44b0a734a29f8e2d887775662425bee2031bced2', '', '', '', '2020-02-23 09:13:36'),
+(2, 'debjeet', 'debjeet194@gmail.com', 'f362bd6883b7f4d5d02efcebd874900f6994f39c', 'admin', 'dd10b4cf73792bdadbe4214b63c540f0a14ed5ff', '', '', '', '2020-02-23 09:17:20');
 
 --
 -- Indexes for dumped tables
@@ -122,9 +157,9 @@ ALTER TABLE `plans`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `room`
+-- Indexes for table `rooms`
 --
-ALTER TABLE `room`
+ALTER TABLE `rooms`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -147,7 +182,7 @@ ALTER TABLE `activities`
 -- AUTO_INCREMENT for table `appliances`
 --
 ALTER TABLE `appliances`
-  MODIFY `id` bigint(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `plans`
@@ -156,16 +191,16 @@ ALTER TABLE `plans`
   MODIFY `id` bigint(255) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `room`
+-- AUTO_INCREMENT for table `rooms`
 --
-ALTER TABLE `room`
-  MODIFY `id` bigint(255) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `rooms`
+  MODIFY `id` bigint(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
